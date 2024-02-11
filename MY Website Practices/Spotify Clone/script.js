@@ -1,3 +1,5 @@
+//Creating a clone of spotify website with additional features
+
 console.log("Lets write some javascript...");
 let currentSong = new Audio();
 
