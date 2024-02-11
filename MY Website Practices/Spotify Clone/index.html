@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>'Spotify - Web Player: Music for everyone'</title>
+</head>
+
+<body>
+    <!-- <img src="home.svg" alt=""> -->
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded p-1 m-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="Spotify"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="" srcset="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList">
+
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/sg-en/legal/" id="" class="" data-encore-id="textLink"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/sg-en/privacy/" id="" class="" data-encore-id="textLink"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/sg-en/legal/privacy-policy/" id="" class="" data-encore-id="textLink"><span>Privacy Policy</span></a></div>
+                    <div>
+                        <a href="https://www.spotify.com/sg-en/legal/cookies-policy/" id="" class="" data-encore-id="textLink"> <span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/sg-en/legal/privacy-policy/#s3" id="" class="" data-encore-id="textLink"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/sg-en/accessibility/" id="" class="" data-encore-id="textLink"><span>Accessibility</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right  bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/arrow-left-01-stroke-sharp.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        role="img" color="#000000">
+                        <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/arrow-right-01-stroke-sharp.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        role="img" color="#000000">
+                        <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16">
+                        </path>
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" stroke-width="1.5" fill="#000"
+                                    stroke-linejoins="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week... </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week... </p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img id = "previous"src="prevsong.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="nextsong.svg" alt="">
+                    </div>
+                    <div class="songtime">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
