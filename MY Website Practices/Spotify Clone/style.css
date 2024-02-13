@@ -227,7 +227,7 @@ h1{
 }
 
 .seekbar{
-    height: 2px;
+    height: 4px;
     width: 97%;
     background: rgb(0, 0, 0);
     position: absolute;
@@ -243,9 +243,9 @@ h1{
     border-radius: 11px;
     position: relative;
     background-color: black;
-    bottom: 6px;
+    bottom: 5px;
     left: 0%;
-    transition: 0.5s;
+    transition: left 0.5s;
 }
 
 .songbuttons img{
