@@ -116,6 +116,12 @@ async function main() {
         currentSong.currentTime = ((currentSong.duration) * percent)/ 100 ;
         
     })
+
+    //Adding An event listner for hamburger
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+        document.querySelector(".left").style.left = 0;
+          
+    })
 }
 
 

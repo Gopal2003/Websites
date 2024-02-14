@@ -206,7 +206,9 @@ h1{
     border-radius: 4px;
 }
 
-
+.hamburger{
+    display: none;
+}
 .songList .info{
     font-size: 13px;
     width: 344px;
@@ -259,4 +261,32 @@ h1{
 .abovebar{
     display: flex;
     justify-content: space-between;
+}
+
+.hamburgerCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+@media (max-width: 1400px) {
+     .left{
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        width: 393px;
+        background-color: black;
+    }
+    .right{
+        width: 100vw;
+     }
+     .playbar{
+        width: 95vw;
+     }
+
+     .hamburger
+     {
+        display: block;
+     }
 }
