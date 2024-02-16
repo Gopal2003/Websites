@@ -98,7 +98,7 @@ h1 {
     gap: 10px;
     flex-wrap: wrap;
     margin: 30px;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 70vh;
 }
 
@@ -180,7 +180,7 @@ h1 {
     border-radius: 12px;
     padding: 12px;
     width: 70vw;
-    height: 40px;
+    min-height: 40px;
 }
 
 .songbuttons {
@@ -273,6 +273,7 @@ h1 {
 .abovebar {
     display: flex;
     justify-content: space-between;
+    margin: 14px 0;
 }
 
 .hamburgerCont {
@@ -287,9 +288,9 @@ h1 {
 @media (max-width: 1400px) {
     .left {
         position: absolute;
-        left: -100%;
+        left: -120%;
         z-index: 1;
-        width: 393px;
+        width: 370px;
         background-color: black;
         transition: all .3s;
     }
@@ -299,7 +300,7 @@ h1 {
     }
 
     .playbar {
-        width: 95vw;
+        width: calc(100vw - 60px);
         margin: -528px 0px;
     }
 
@@ -314,6 +315,21 @@ h1 {
         position: absolute;
         right: 24px;
         top: 23px;
+    }
+
+    .seekbar{
+        width: calc(100vw - 60px);
+    }
+
+}
+
+@media (max-width: 450px) {
+    .playbar {
+        margin: -114px 0px;
+    }
+
+    .songinfo{
+        font-size: 12px;
     }
 
 }
