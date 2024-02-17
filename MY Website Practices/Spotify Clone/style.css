@@ -321,9 +321,18 @@ h1 {
         width: calc(100vw - 60px);
     }
 
+    .card{
+        width: 90vw;
+    }
+
+    .cardContainer{
+        margin: 0;
+        justify-content: center;
+    }
+
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
     .playbar {
         margin: -114px 0px;
     }
