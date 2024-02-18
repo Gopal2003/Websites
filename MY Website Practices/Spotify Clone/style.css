@@ -89,6 +89,10 @@ html {
     padding: 16px;
 }
 
+.spotifyPlaylists h1{
+    padding: 16px;
+}
+
 h1 {
     font-size: revert;
 }
@@ -328,6 +332,14 @@ h1 {
     .cardContainer{
         margin: 0;
         justify-content: center;
+    }
+
+    .right{
+        margin: 0;
+    }
+
+    .songbuttons img{
+        width: 37px;
     }
 
 }
