@@ -191,6 +191,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 16px;
+    width: 257px;
 }
 
 .songList {
@@ -226,6 +227,10 @@ h1 {
 .songList .info {
     font-size: 13px;
     width: 344px;
+}
+
+.info div{
+    word-break: break-all;
 }
 
 .playnow {
@@ -287,6 +292,13 @@ h1 {
     gap: 14px;
 }
 
+.volTime{
+    display: flex;
+    gap: 100px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
 
 
 @media (max-width: 1400px) {
@@ -297,6 +309,7 @@ h1 {
         width: 370px;
         background-color: black;
         transition: all .3s;
+        padding: 0;
     }
 
     .right {
@@ -339,7 +352,7 @@ h1 {
     }
 
     .songbuttons img{
-        width: 37px;
+        width: 25px;
     }
 
     .songList{
@@ -356,6 +369,5 @@ h1 {
     .songinfo{
         font-size: 12px;
     }
-
 
 }
