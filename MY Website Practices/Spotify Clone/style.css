@@ -191,7 +191,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 257px;
+    width: 100px;
 }
 
 .songList {
@@ -294,12 +294,19 @@ h1 {
 
 .volTime{
     display: flex;
-    gap: 100px;
-    /* justify-content: center; */
-    /* align-items: center; */
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
 }
 
+/* .volume:hover::after{
+    content: "hello";
+} */
 
+/* .volume img{
+    margin-left: 12px;
+    margin-top: 2px;
+} */
 
 @media (max-width: 1400px) {
     .left {
@@ -352,13 +359,20 @@ h1 {
     }
 
     .songbuttons img{
-        width: 25px;
+        width: 21px;
     }
 
     .songList{
         height: 581px;
     }
 
+    .volume{
+        margin-left: 20px;
+    }
+
+    /* .volume:hover::after{
+        content: "hello";
+    } */
 }
 
 @media (max-width: 451px) {
