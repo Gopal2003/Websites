@@ -280,8 +280,9 @@ h1 {
 }
 
 .abovebar {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
+    align-items: center;
     margin: 14px 0;
 }
 
@@ -373,6 +374,11 @@ h1 {
     /* .volume:hover::after{
         content: "hello";
     } */
+
+    .volTime{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 451px) {
@@ -382,6 +388,10 @@ h1 {
 
     .songinfo{
         font-size: 12px;
+    }
+    
+    .buttons{
+        display: flex;
     }
 
 }

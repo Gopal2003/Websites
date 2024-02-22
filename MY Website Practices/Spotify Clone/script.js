@@ -111,8 +111,8 @@ async function main() {
         document.querySelector(".circle").style.left= percent + "%";
        
         // console.log(e.target.getBoundingClientRect(),e.offsetX);
-        console.log(currentSong.duration);
-        console.log(percent);
+        // console.log(currentSong.duration);
+        // console.log(percent);
 
         currentSong.currentTime = ((currentSong.duration) * percent)/ 100 ;
         
@@ -139,13 +139,19 @@ async function main() {
     })
 
     next.addEventListener("click",()=>{
-        console.log("next clicked");
+        console.log("Next clicked");
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]) ;
         if(index + 1 < songs.length)
         {
             playMusic(songs[index + 1]);
         }
         
+    })
+
+    //Adding an event to value
+    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
+        console.log("Setting volume to",e.target.value, "/ 100");
+        currentSong.volume = parseInt(e.target.value)/ 100;
     })
 }
 
